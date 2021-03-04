@@ -1,0 +1,47 @@
+<mat-sidenav-container fullscreen>
+    <mat-sidenav #sidenav mode="over">
+
+        <mat-toolbar color="primary">
+            <span>archive</span>
+            <span class="spacer"></span>
+            <button mat-icon-button (click)="sidenav.toggle()">
+               <mat-icon> archive </mat-icon>
+            </button>
+        </mat-toolbar>
+
+        <mat-nav-list>
+            <a routerLink="./mis-expedientes" mat-list-item (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>label</mat-icon>
+                <span>Mis expedientes</span>
+            </a>
+            <a routerLink="./generar" mat-list-item (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>drive_file_rename_outline</mat-icon>
+                <span>Generar expediente</span>
+            </a>
+            <a routerLink="./buscar" mat-list-item (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>search</mat-icon>
+                <span>Buscar expediente</span>
+            </a>
+        </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-toolbar>
+        <span>unarchive</span>
+        <button mat-icon-button (click)="sidenav.toggle()">
+           <mat-icon> unarchive </mat-icon>
+        </button>
+
+        <span class="spacer"></span>
+
+        <button mat-button>
+            cerrar sesión  
+        </button>
+    </mat-toolbar>
+
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+
+
+</mat-sidenav-container>

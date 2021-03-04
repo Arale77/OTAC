@@ -1,0 +1,23 @@
+{
+    "profile": [{
+            "idSoporte": 1,
+            "nombreSoporteExpediente": "Soporte Expediente 001"
+        },
+        {
+            "idSoporte": 2,
+            "nombreSoporteExpediente": "Soporte Expediente 002"
+        },
+        {
+            "idSoporte": 3,
+            "nombreSoporteExpediente": "Soporte Expediente 003"
+        },
+        {
+            "idSoporte": 4,
+            "nombreSoporteExpediente": "Soporte Expediente 004"
+        },
+        {
+            "idSoporte": 5,
+            "nombreSoporteExpediente": "Soporte Expediente 005"
+        }
+    ]
+}
